@@ -16,9 +16,6 @@ a{
   color: white;
   text-decoration: none;
 }
-.main-container{
-  background-color: #050e54;
-}
 
 nav {
   font-family: "Edu NSW ACT Foundation", cursive;
@@ -27,14 +24,14 @@ nav {
   font-style: normal;
   color: white;
   width: 100%;
-  height: 14vh;
+  height: 16vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
-nav h1 {
-  font-size: medium;
+nav h1{
+  font-size: xx-large;
 }
 nav ul {
   display: flex;
@@ -42,8 +39,8 @@ nav ul {
   list-style: none;
 }
 nav ul li {
-  margin: 0 10px;
-  font-size: x-small;
+  margin: 0 40px;
+  font-size: xx-large;
 }
 nav ul li a {
   text-decoration: none;
@@ -57,37 +54,42 @@ nav div {
 .container {
   display: flex;
   width: 100%;
-  margin: 30px 0 ;
+  margin: 90px 0 ;
   flex-wrap: nowrap;
 }
 
 .image {
   background-image: url("./Images/myImage.png");
   background-size:cover;
-  padding: 60px 60px 38px 30px;
+  padding: 240px 240px 152px 120px;
   border-radius: 50%;
 }
 
 .left{
-  margin: 0 60px;
+  margin: 0 120px;
 }
 
 .right{
-  margin: 20px ;
+  margin: 50px 150px;
+  width: 600px;
 }
 .right p{
-  font-size: x-small;
+  font-size: xx-large
 }
 
 .skill{
   display: flex;
   flex-direction: column;
-  margin: 0 25px;
-  margin-top: 70px;
+  margin-top: 130px;
   margin-bottom: 30px;
 }
+.skill h1{
+  font-size: 50px;
+  font-weight: bold;
+  margin: 50px 100px;
+}
 .skillItems{
-  margin: 20px -30px;
+  margin: 20px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -96,8 +98,11 @@ nav div {
   list-style: none;
   margin-top: 20px;
 }
+.skillItems h3{
+  font-size: 40px;
+}
 .skillItems ul li{
-  font-size: small;
+  font-size: xx-large;
   margin: 3px 0;
 }
 .orange{
@@ -116,12 +121,13 @@ nav div {
   color: rgb(14, 188, 14);
 }
 .projects h2{
-  margin: 0 25px;
+  margin: 50px 25px;
+  font-size: 50px;
 }
 .projects{
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 100px 70px;
 }
 .projectItems{
   display: flex;
@@ -130,31 +136,41 @@ nav div {
   justify-content: space-around;
 }
 .projects img{
-  height: 30vh;
-  width: 60vh;
+  height: 28vh;
+  width: 56vh;
   border-radius: 4px;
 }
+.pitems h6{
+  font-size: 30px;
+  margin: 20px 0;
+}
 .pitems{
-  margin-right: 10px;
+  margin-right: 50px;
 }
 .contact{
-  margin: 30px 30px;
+  margin: 30px 90px;
+}
+.contact h1{
+  font-size: 60px;
 }
 .contact ul{
-  margin: 20px 0;
+  list-style: none;
+  margin: 50px 0;
 }
 .contact ul li{
   margin: 5px 0;
-}
-.contact ul{
-   list-style: none;
+  font-size: 30px;
 }
 @media only screen and (max-width: 500px) {
+  .container{
+    margin: 40px 0;
+  }
   nav ul{
-    margin: 0 24px;
+    margin: 0 38px;
   }
   nav ul li{
-    margin-right: 30px;
+    margin: 0 0;
+    margin-right: 35px;
     font-size: large;
   }
   nav h1{
@@ -200,22 +216,22 @@ nav div {
   .skillItems ul li{
     margin: 10px 0;
   }
-  .skillItems h5{
+  .skillItems h3{
     width: 130px;
     font-size: x-large;
     margin: 0 0;
   }
   .databases{
-    margin: 20px 0;
+    margin: 30px 0;
   }
   .deployment{
-    margin: 20px 0;
+    margin: 32px 0;
   }
   .skill{
-    margin: 0 0;
+    margin: 43px 0;
   }
-  .skill h2{
-    margin: 0 23px;
+  .skill h1{
+    margin: 40px 23px;
     font-size: xx-large;
   }
   .skillItems ul li{
@@ -238,14 +254,17 @@ nav div {
    height: 15vh;
    width: 30vh;
   }
-  .pitems{
-    margin: 20px 0;
-    font-size: x-large;
-  }
   .pitems h6{
     margin: 10px 0;
+    font-size:medium;
   }
-  .contact h2{
+  .pitems{
+    margin: 30px 0;
+  }
+  .contact{
+    margin: 0 28px;
+  }
+  .contact h1{
     width: 130px;
     font-size: xx-large;
     margin: 0 0;
