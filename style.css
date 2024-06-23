@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  color: white;
+  background-color: #050e54;
+}
+.font{
+  font-family: "Edu NSW ACT Foundation", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+
+nav {
+  font-family: "Edu NSW ACT Foundation", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  width: 100%;
+  height: 16vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+nav h1{
+  font-size: xx-large;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 40px;
+  font-size: xx-large;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav div {
+  display: none;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  margin: 90px 0 ;
+  flex-wrap: nowrap;
+}
+
+.image {
+  background-image: url("./Images/myImage.png");
+  background-size:cover;
+  padding: 240px 240px 152px 120px;
+  border-radius: 50%;
+}
+
+.left{
+  margin: 0 120px;
+}
+
+.right{
+  margin: 50px 150px;
+  width: 600px;
+}
+.right p{
+  font-size: xx-large
+}
+
+.skill{
+  display: flex;
+  flex-direction: column;
+  margin-top: 130px;
+  margin-bottom: 30px;
+}
+.skill h1{
+  font-size: 50px;
+  font-weight: bold;
+  margin: 50px 100px;
+}
+.skillItems{
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.skillItems ul{
+  list-style: none;
+  margin-top: 20px;
+}
+.skillItems h3{
+  font-size: 40px;
+}
+.skillItems ul li{
+  font-size: xx-large;
+  margin: 3px 0;
+}
+.orange{
+  color: rgb(255, 98, 0);
+}
+.blue{
+  color: rgb(0, 38, 255);
+}
+.yellow{
+  color: yellow;
+}
+.purple{
+  color: rgb(149, 21, 149);
+}
+.green{
+  color: rgb(14, 188, 14);
+}
+.projects h2{
+  margin: 50px 25px;
+  font-size: 50px;
+}
+.projects{
+  display: flex;
+  flex-direction: column;
+  margin: 100px 70px;
+}
+.projectItems{
+  display: flex;
+  flex-direction: row;
+  margin: 20px 25px;
+  justify-content: space-around;
+}
+.projects img{
+  height: 28vh;
+  width: 56vh;
+  border-radius: 4px;
+}
+.pitems h6{
+  font-size: 30px;
+  margin: 20px 0;
+}
+.pitems{
+  margin-right: 50px;
+}
+.contact{
+  margin: 30px 90px;
+}
+.contact h1{
+  font-size: 60px;
+}
+.contact ul{
+  list-style: none;
+  margin: 50px 0;
+}
+.contact ul li{
+  margin: 5px 0;
+  font-size: 30px;
+}
+@media only screen and (max-width: 500px) {
+  .container{
+    margin: 40px 0;
+  }
+  nav ul{
+    margin: 0 38px;
+  }
+  nav ul li{
+    margin: 0 0;
+    margin-right: 35px;
+    font-size: large;
+  }
+  nav h1{
+    display: none;
+  }
+  nav div {
+    display: inline-block;
+    position: absolute;
+    right: 40px;
+    padding: 4px 8px;
+  }
+  nav div :hover {
+    transition: all 200ms ease-in-out;
+    box-shadow: rgba(0, 208, 255, 0.3) 0px 0px 0px 6px;
+  }
+  nav {
+    height: 10vh;
+    justify-content: flex-start;
+  }
+  nav h1 {
+    margin: 0 50px;
+    font-size: larger;
+  }
+  .container{
+     flex-wrap: wrap;
+     justify-content: center;
+  }
+
+  .right{
+    text-align: center;
+    margin: 60px 10px;
+  }
+  .right p{
+    font-size: large;
+  }
+  .image{
+   padding: 120px 120px 68px 60px;
+  }
+  .skillItems{
+    flex-wrap: wrap;
+    margin: 30px 0;
+  }
+  .skillItems ul li{
+    margin: 10px 0;
+  }
+  .skillItems h3{
+    width: 130px;
+    font-size: x-large;
+    margin: 0 0;
+  }
+  .databases{
+    margin: 30px 0;
+  }
+  .deployment{
+    margin: 32px 0;
+  }
+  .skill{
+    margin: 43px 0;
+  }
+  .skill h1{
+    margin: 40px 23px;
+    font-size: xx-large;
+  }
+  .skillItems ul li{
+    font-size: large;
+  }
+  .projects{
+    margin: 20px 0;
+  }
+  .projects h2{
+    margin: 0 23px;
+    width: 130px;
+    font-size: xx-large;
+  }
+  .projectItems{
+    flex-wrap: wrap;
+    margin: 30px 25px;
+    justify-content: flex-start;
+  }
+  .projects img{
+   height: 15vh;
+   width: 30vh;
+  }
+  .pitems h6{
+    margin: 10px 0;
+    font-size:medium;
+  }
+  .pitems{
+    margin: 30px 0;
+  }
+  .contact{
+    margin: 0 28px;
+  }
+  .contact h1{
+    width: 130px;
+    font-size: xx-large;
+    margin: 0 0;
+  }
+  .contact ul li{
+    font-size: x-large;
+    margin: 10px 0;
+  }
+  .contact ul{
+    margin: 40px 0;
+  }
+}
